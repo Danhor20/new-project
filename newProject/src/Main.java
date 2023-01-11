@@ -1,28 +1,32 @@
 public class Main {
     public static void main(String[] args) {
 
-        int a = 10;
-        int b = 12;
-        int c = 14;
-        if (a > b && a > c) {
-            System.out.printf("a больше всех");
+        int katya = 10;
+        int misha = 12;
+        int danil = 14;
+
+
+        if (katya > misha && katya > danil) {
+            System.out.printf("Misha больше всех");
         } else {
-            System.out.printf("с среднее ");
-            System.out.printf("b меньше всех");
+            System.out.printf("Danil среднее ");
+            System.out.printf("Misha меньше всех");
 
         }
 
-        if (b > a && b > c) {
-            System.out.printf("b больше всех");
+        if (misha > katya && misha > danil) {
+            System.out.printf("Misha больше всех");
         }else {
-            System.out.printf("с больше всех");
-            System.out.printf("а меньше всех");
+            System.out.printf("Danil больше всех");
+            System.out.printf("Katya меньше всех");
         }
-        if (c > a && c >b) {
-            System.out.printf("c больше всех");
-        }else {
-            System.out.printf("a меньше всех");
-            System.out.printf(" b среднее");
+        if (danil > katya && danil >misha) {
+            System.out.printf("Danil больше всех");
+        } if (danil > katya && misha > katya) {
+            System.out.printf("Katya меньше всех");
+            System.out.printf(" Misha среднее");
+        }
+
+            
         }
     }
-}
