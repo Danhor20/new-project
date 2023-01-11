@@ -10,28 +10,59 @@ public class Main {
         int max = -1; // максимальный возраст
 
 
+        if (katyaAge >= mishaAge && katyaAge >= danilAge) {
+            max = katyaAge;
 
-        if (katyaAge > mishaAge && katyaAge > danilAge) {
-            System.out.printf("Misha больше всех");
-        } else {
-            System.out.printf("Danil среднее ");
-            System.out.printf("Misha меньше всех");
+            if (mishaAge >= danilAge) {
+                middle = mishaAge;
+
+                min = danilAge;
+            } else {
+                middle = danilAge;
+                min = mishaAge;
+            }
+
+        }
+
+        if (mishaAge >= katyaAge && mishaAge >= danilAge) {
+            max = mishaAge;
+
+            if (katyaAge >= danilAge) {
+
+                middle = katyaAge;
+                min = danilAge;
+            } else {
+                middle = danilAge;
+                min = katyaAge;
+            }
 
         }
 
-        if (mishaAge > katyaAge && mishaAge > danilAge) {
-            System.out.printf("Misha больше всех");
-        }else {
-            System.out.printf("Danil больше всех");
-            System.out.printf("Katya меньше всех");
+
+
+
+
+
+
+        if (danilAge >= katyaAge && danilAge >= mishaAge) {
+            max = danilAge;
+
+            if (katyaAge >= mishaAge) {
+
+                middle = katyaAge;
+                min = mishaAge;
+            } else {
+                middle = mishaAge;
+                min = katyaAge;
+            }
+
+            System.out.println("Minimal age : " + min);
+            System.out.println("Middle age : " + middle);
+            System.out.println("Maximal age : " + max);
         }
-        if (danilAge > katyaAge && danilAge >mishaAge) {
-            System.out.printf("Danil больше всех");
-        } if (danilAge > katyaAge && mishaAge > katyaAge) {
-            System.out.printf("Katya меньше всех");
-            System.out.printf(" Misha среднее");
+
         }
 
 
-        }
-    }
+}
+
